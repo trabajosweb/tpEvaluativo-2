@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> presentacion </title>
+	</head>
+	<body>
+		
+		<form wicket:id="formCargar">
+			Nombre: <input type="text" wicket:id="nombre" /><br>
+			Apellido: <input type="text" wicket:id="apellido" /><br>
+			Posicion : <select wicket:id="posicion" /><br>
+			Nombre Equipo : <select wicket:id="nombresEquipos" /><br>
+			<input type="submit" Guardar />
+		</form>
+	<table border="1">
+		<tr>
+		   <th>NombreEquipo</th><th>Nombre</th><th>Apellido</th><th>Posicion</th>
+		</tr>
+		<tr wicket:id="filas">
+		   <td wicket:id="datosFila"></td>
+		</tr>
+	</table>
+	</body>
+</html>
