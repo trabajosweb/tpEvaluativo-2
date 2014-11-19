@@ -7,9 +7,8 @@
   <packaging>pom</packaging>
   <modules>
     <module>repositorio</module>
-    <module>presentacion</module>
-    <module>servicio</module>
+     <module>servicio</module>
     <module>dominio</module>
-    <module>presentaciion</module>
+    <module>presentacion</module>
   </modules>
 </project>
