@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="src" path="src/test/java" output="target/test-classes" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/jdo/jdo-api/3.1-rc1/jdo-api-3.1-rc1.jar" sourcepath="M2_REPO/javax/jdo/jdo-api/3.1-rc1/jdo-api-3.1-rc1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/transaction/transaction-api/1.1/transaction-api-1.1.jar" sourcepath="M2_REPO/javax/transaction/transaction-api/1.1/transaction-api-1.1-sources.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4.jar" sourcepath="M2_REPO/postgresql/postgresql/9.1-901.jdbc4/postgresql-9.1-901.jdbc4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/datanucleus/datanucleus-api-jdo/4.0.4/datanucleus-api-jdo-4.0.4.jar" sourcepath="M2_REPO/org/datanucleus/datanucleus-api-jdo/4.0.4/datanucleus-api-jdo-4.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/datanucleus/datanucleus-rdbms/4.0.5/datanucleus-rdbms-4.0.5.jar" sourcepath="M2_REPO/org/datanucleus/datanucleus-rdbms/4.0.5/datanucleus-rdbms-4.0.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2.jar" sourcepath="M2_REPO/org/xerial/sqlite-jdbc/3.7.2/sqlite-jdbc-3.7.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/datanucleus/datanucleus-core/4.0.4/datanucleus-core-4.0.4.jar" sourcepath="M2_REPO/org/datanucleus/datanucleus-core/4.0.4/datanucleus-core-4.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/datanucleus/datanucleus-jdo-query/4.0.4/datanucleus-jdo-query-4.0.4.jar" sourcepath="M2_REPO/org/datanucleus/datanucleus-jdo-query/4.0.4/datanucleus-jdo-query-4.0.4-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar"/>
+  <classpathentry kind="src" path="/dominio"/>
+  <classpathentry kind="var" path="M2_REPO/org/datanucleus/datanucleus-enhancer/3.1.1/datanucleus-enhancer-3.1.1.jar" sourcepath="M2_REPO/org/datanucleus/datanucleus-enhancer/3.1.1/datanucleus-enhancer-3.1.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/ow2/asm/asm/4.0/asm-4.0.jar" sourcepath="M2_REPO/org/ow2/asm/asm/4.0/asm-4.0-sources.jar"/>
 </classpath>

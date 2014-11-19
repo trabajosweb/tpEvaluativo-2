@@ -7,11 +7,12 @@
     <artifactId>tpEvaluativoDos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.ifes.tpEvaluativoDos</groupId>
   <artifactId>servicio</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>servicio</name>
+  
   <url>http://maven.apache.org</url>
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -47,10 +48,12 @@
     	<artifactId>spring-core</artifactId>
     	<version>4.1.1.RELEASE</version>
     </dependency>
-    <dependency>
-    <groupId>org.apache.wicket</groupId>
-    <artifactId>wicket-core</artifactId>
-    <version>6.18.0</version>
-</dependency>
+   
+   <dependency>
+       <groupId>org.apache.wicket</groupId>
+      <artifactId>wicket-core</artifactId>
+      <version>6.18.0</version>
+   </dependency> 
+   
   </dependencies>
 </project>
