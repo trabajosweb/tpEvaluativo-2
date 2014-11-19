@@ -1,5 +1,4 @@
 package org.servicio;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -20,10 +19,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class ServicioEquipo extends WebPage {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	ApplicationContext context = new AnnotationConfigApplicationContext(
 			ClaseConfiguracion.class);
 	IRepositorio repositorio = (IRepositorio) context.getBean("RepositorioEquipo");
@@ -33,15 +28,14 @@ public class ServicioEquipo extends WebPage {
 	private List listaPosiciones = Arrays.asList(new String[] {"Arquero","Defensor","Medio Campista","Delantero"});
 	private DropDownChoice posicion;
 	private List listaEquipos = Arrays.asList(new String[] {"Boca","River","Independiente","Racing"});
-	private DropDownChoice nombresEquipos;
+	private DropDownChoice nombreEquipo;
 	
 	private PropertyModel nombreModelo;
 	private PropertyModel apellidoModelo;
 	private PropertyModel posicionModelo;
 	private PropertyModel nombreEquipoModelo;
 	
-	public void guardar(){
-		
+	public void cargar(){
 		final Equipo equipo = new Equipo();
 		nombreModelo = new PropertyModel(equipo,"jugador.nombre");
 		apellidoModelo = new PropertyModel(equipo,"jugador.apellido");
@@ -51,12 +45,11 @@ public class ServicioEquipo extends WebPage {
 		nombre = new TextField<String>("nombre",nombreModelo);
 		apellido = new TextField<String>("apellido",apellidoModelo);
 		posicion = new DropDownChoice("posicion",posicionModelo,listaPosiciones);
-		nombresEquipos= new DropDownChoice("nombresEquipos",nombreEquipoModelo,listaEquipos);
+		nombreEquipo= new DropDownChoice("nombreEquipo",nombreEquipoModelo,listaEquipos);
 		
 		Form formulario = new Form("formCargar") {
 			@Override
 			public void onSubmit() {
-				
 				repositorio.guardar(equipo);
 			}
 		};
@@ -64,7 +57,7 @@ public class ServicioEquipo extends WebPage {
 		formulario.add(nombre);
 		formulario.add(apellido);
 		formulario.add(posicion);
-		formulario.add(nombresEquipos);
+		formulario.add(nombreEquipo);
 		add(formulario);
 	}
 	public void listar(){

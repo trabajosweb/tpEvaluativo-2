@@ -23,11 +23,6 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-    	<groupId>com.ifes.tpEvaluativoDos</groupId>
-    	<artifactId>dominio</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
-     <dependency>
 			<groupId>postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>9.1-901.jdbc4</version>
@@ -63,6 +58,11 @@
 			<groupId>hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<version>1.8.0.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ifes.tpEvaluativoDos</groupId>
+			<artifactId>dominio</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
   </dependencies>
 </project>

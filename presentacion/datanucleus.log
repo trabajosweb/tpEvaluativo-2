@@ -1,0 +1,6 @@
+20:59:38,840 (main) WARN  [DataNucleus.General] - Extension Point "org.datanucleus.implementation_creator" not registered, but plugin "org.datanucleus.enhancer" defined in file:/home/alejandra/.m2/repository/org/datanucleus/datanucleus-enhancer/3.1.1/datanucleus-enhancer-3.1.1.jar refers to it.
+20:59:38,944 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer (versión 4.0.4) para el API "JDO" utilisando el JRE "{2}"
+20:59:38,950 (main) WARN  [DataNucleus.MetaData] - Metadata file -enhancerName not found in CLASSPATH
+20:59:38,950 (main) WARN  [DataNucleus.MetaData] - Metadata file ASM not found in CLASSPATH
+20:59:39,029 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado con exito para 0 clases. Tiempos : input=79 ms, enhance=0 ms, total=79 ms. Compruebe el LOG para los detalles
+20:59:39,029 (main) INFO  [DataNucleus.Enhancer] - DataNucleus Enhancer ha terminado sin enhance ninguna clase. Compruebe el LOG para los detalles.
